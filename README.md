@@ -27,7 +27,7 @@
 | 問 | 答 | 其他 |
 |  ---  |  ---  |  ---  |
 |  Vue的生命週期  |  (太長，看下面)  | [生命週期](#生命週期) |
-|  v-model取代MVC哪個部分?  | MVC可以用在前、後端。當用在前端時，Model，與資料介接的地方，負責去向 DB 撈取資料。View，畫面。`Controller，因為它負責View與Model間的溝通`  |   |
+|  v-model取代MVC哪個部分?  | MVC可以用在前、後端。當用在前端時，Model，與資料介接的地方，負責去向 DB 撈取資料。View，畫面。`Controller，因為它負責View與Model間的溝通`  | [前後端分離與 SPA](https://blog.techbridge.cc/2017/09/16/frontend-backend-mvc/)、[MVC、SPA 與 SSR](https://hulitw.medium.com/introduction-mvc-spa-and-ssr-545c941669e9)  |
 |  data為什麼是function?  |  避免每個component的instance共用同一個物件，導致各個組件的資料互相影響  |   |
 |  為什麼v-for要key?  |  [key](https://vuejs.org/api/built-in-special-attributes.html#key)可視為DOM的身分證，`用於diff算法辨別畫面哪些地方需要更新`。如果沒有設置key，Vue會使用一種最小化元素的移動、盡可能重複使用元素的演算法。如果有key，會根據key的順序變化來重新排列元素(或者說改變其內容)，所以那些元素不會被消滅，也就`減少了操作DOM的成本`  |   |
 |  v-for和v-if為何不能一起用?  |  v-if優先級高於v-for，用computed過濾完的資料來跑v-for比較好  |   |
